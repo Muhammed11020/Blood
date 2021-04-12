@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/bloodTypeCompatibilityFragment">
+
+    <fragment
+        android:id="@+id/my_profile"
+        android:name="com.example.blooddonation.ui.home.MyProfileFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_my_profile" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.blooddonation.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/contact_us"
+        android:name="com.example.blooddonation.ui.slideshow.ContactUsFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/bloodTypeCompatibilityFragment"
+        android:name="com.example.blooddonation.BloodTypeCompatibilityFragment"
+        android:label="fragment_blood_type_compatibility"
+        tools:layout="@layout/fragment_blood_type_compatibility" />
+</navigation>
